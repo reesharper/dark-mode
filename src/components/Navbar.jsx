@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
-const Navbar = (props) => {
+
+export default function Navbar(props) {
+  
   const toggleMode = e => {
     e.preventDefault();
     props.setDarkMode(!props.darkMode);
   };
+
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
@@ -18,4 +21,4 @@ const Navbar = (props) => {
   );
 };
 
-export default Navbar;
+// export default Navbar;
