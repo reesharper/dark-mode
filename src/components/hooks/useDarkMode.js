@@ -8,6 +8,8 @@ export const useDarkMode = () => {
 
   const enabled =
     typeof enabledState !== 'undefined' ? enabledState : prefersDarkMode;
+    console.log(enabled)
 
   return [enabled, setEnabledState];
 };
+
